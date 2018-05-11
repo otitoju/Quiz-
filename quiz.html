@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz</title>
+    <link rel="stylesheet" type="text/css" href="quiz.css">
+
+</head>
+<body>
+    <h1>Welcome to my Quiz</h1>
+    <form  id="quiz" name="quiz">
+            <p>Please enter your name</p>
+            <input type="text" id="textbox" name="name">
+            <hr/>
+            <p>	What is my name</p>
+            <input type="radio" name="question2" id="mc" value="sam">sam<br/>
+            <input type="radio" name="question2" id="mc" value="john">john<br/>
+
+            <p>	What is the capital of nigeria</p>
+            <input type="radio" name="question3" id="mc" value="Abuja">Abuja<br/>
+            <input type="radio" name="question3" id="mc" value="Lagos">Lagos<br/>
+
+            <p>	Who is isaiah</p>
+            <input type="radio" name="question4" id="mc" value="kidnapper" unchecked>kidnapper<br/>
+            <input type="radio" name="question4" id="mc" value="ritualist">ritualist<br/>
+            <hr/>
+
+            <input type="button" id="button" value="I'm Done!" onclick="check()">
+
+    </form>
+    <div id="after_submit">
+        <p id="message"></p>
+        <p id="number_correct"></p>
+        <p id="demo"></p>
+    </div>
+
+    <script src=" quiz.js"></script>
+</body>
+</html>
